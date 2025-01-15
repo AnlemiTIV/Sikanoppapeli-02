@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right,rgb(255, 147, 147), rgb(161, 250, 161));
+    display: grid;
+    place-items: center;    
+}
+
+/**/
+
+/*Aiempi tyylit.css vvvvv */
+.wrapper { /*Peliruutu*/
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+/*Aiempi tyylit ^^^^*/
+
+/**/
+
+.pelaajienMaaraDiv { /*kysytään määrät. Main Div 1.sivulle*/
+    width: 520px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(121, 160, 144, 0.393);
+    padding: 2px;
+    display: flex;
+}
+#sisalto-valinnat { /*Sub Div 1. sivulla, eli main div:in sisällä*/
+    display: relative;
+    margin: auto;
+}
+.pelaajat { /*1. sivulle*/
+    display: flex;
+    justify-content: center;
+}
+
+/**/
+
+.pelaajienNimetDiv { /*kysytään määrät. Main Div 2.sivulle*/ 
+    width: 520px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(121, 160, 144, 0.393);
+    padding: 2px;
+    display: flex;
+}
+.pelaajienNimetSyotto { /*Sub Div2. sivulla, eli main div 2. sivulle*/
+    display: relative;
+    margin: auto;
+}
+
+#pelaajienNimiKentat2, #pelaajienNimiKentat3, #pelaajienNimiKentat4 {
+    display: relative;
+    margin: auto;
+}
+
+/**/
+
+.pisteidenMaaraDiv { /*kysytään pisteiden määrät. Main Div 3. sivulle*/
+    width: 520px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(121, 160, 144, 0.393);
+    padding: 2px;
+    display: flex;
+}
+#sisalto-valinnat2 { /*Sub Div 3. sivulla, eli main div:in sisällä*/
+    display: relative;
+    margin: auto;
+}
+.max-pisteet { /*3.sivulle*/
+    display: flex;
+    justify-content: center;
+}
+
+/**/
+
+select { /*Select dropdown box:ia varten*/
+    width: 105px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16.5px;
+}
+
+button {
+    width: 55px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Nopanheitto ja vuoronvaihto painikkeet*/
+.heita_noppaa {
+
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color:rgb(115, 159, 115);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 6px #4a6b5a;
+}
+.heita_noppaa2 {
+
+    width: 90px;
+    height: 60px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color:rgb(207, 67, 113);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 6px rgb(104, 46, 65);
+}
+
+.heita_noppaa3 {
+
+    width: 90px;
+    height: 60px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color:rgb(111, 207, 67);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 6px rgb(49, 94, 27);
+}
+
+.vuoronvaihto{
+
+    width: 90px;
+    height: 60px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    background: rgb(212, 112, 112);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 6px #875757;
+}
+
+.heita_noppaa:hover {
+    background-color: rgb(82, 134, 82);
+}
+
+.heita_noppaa2:hover {
+    background-color: rgb(167, 74, 74);
+}
+
+.heita_noppaa3:hover {
+    background-color: rgb(94, 157, 94);
+}
+
+.vuoronvaihto:hover {
+    background-color:rgb(167, 74, 74);
+}
+
+.heita_noppaa:active{
+    background-color: rgb(70, 120, 70);
+    box-shadow: 0 3px #252525;
+    transform: translateY(4px);
+    color: rgb(166, 166, 166);
+}
+
+.heita_noppaa3:active{
+    background-color:rgb(73, 124, 48);
+    box-shadow: 0 3px #252525;
+    transform: translateY(4px);
+    color: rgb(166, 166, 166);
+}
+
+.heita_noppaa2:active{
+    background-color: rgb(153, 65, 43);
+    box-shadow: 0 3px #252525;
+    transform: translateY(4px);
+    color: rgb(166, 166, 166);
+}
+
+.vuoronvaihto:active{
+    background-color: rgb(153, 65, 43);
+    box-shadow: 0 3px #252525;
+    transform: translateY(4px);
+    color: rgb(166, 166, 166);
+}
+
+
+.pelaajienNimetSyotto > input {
+    width: 105px;
+}
+
+.nimen_lahetys {
+    margin-top: 9px;
+}
+
+input {
+    width: 105px;
+    height: 30px;
+    margin: auto;
+    margin-right: 62px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 15px;
+    padding: 3px;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 5rem;
+    color:rgb(255, 255, 255)
+}
+
+h4 {
+    margin: 10px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.dice-area {
+    margin: 0px 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.score_tablet {
+    margin: 10px 30px 0px 0px;
+    text-align: right;
+    display: inline+block;
+}
+
+p {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);   
+}
+
+img {
+    width: 270px;
+}

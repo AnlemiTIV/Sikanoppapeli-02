@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Nopan Sikanoppapeli</title>
+    <link rel="stylesheet" href="altTyylit.css">
+</head>
+<body>
+
+    <div class="pisteidenMaaraDiv">
+        <div id="sisalto-valinnat2">
+            <label for="max-pisteet" style="font-size: 27px; color: white; pointer-events: none;">Valitse pisteiden määrä</label>
+            <select name="max-pisteet" class="max-pisteet" id="selector-nollaus" style="width: 111px;">
+                <option value="50">50 Pistettä</option>
+                <option value="100">100 Pistettä</option>
+                <option value="150">150 Pistettä</option>
+                <option value="250">250 Pistettä</option>
+            </select>
+            <button class="pisteidenLahetys" onclick="maksimiPisteet(); window.location.href = 'sikanoppa2.html'" >Lähetä</button>
+        </div>
+
+    </div>
+    <script src="./JS2-koodi2.js"></script>   
+</body>
+</html>

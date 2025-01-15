@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Nopan Sikanoppapeli</title>
+    <link rel="stylesheet" href="altTyylit.css">
+</head>
+<body>
+    <!--Pelaajien Määrä tulee ensin eli index.html, sitten tulee heidän nimet, pisteiden määrä ja vasta sitten peli sivusto-->
+
+    <div class="pelaajienMaaraDiv">
+        <div id="sisalto-valinnat">
+            <label for="pelaajat" style="font-size: 27px; color: white; pointer-events: none;">Valitse pelaajien määrä</label>
+            <select name="pelaajat" class="pelaajat" id="selector-nollaus">
+                <!--<option value="1" class="valinta">1 Pelaaja</option>-->
+                <option value="2" class="valinta">2 Pelaajaa</option>
+                <option value="3" class="valinta">3 Pelaajaa</option>
+                <option value="4" class="valinta">4 Pelaajaa</option>
+            </select>
+            <button class="pelaajienLahetys" onclick="pelaajienMaara(); window.location.href = 'pelaajien_nimet.html'" type="button">Lähetä</button>
+        </div>    
+    
+    <script src="./JS2-koodi2.js"></script>   
+</body>
+</html>

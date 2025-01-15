@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikanoppapeli</title>
+    <link rel="stylesheet" href="altTyylit.css">
+</head> <!--Tämä sivu näytetään vasta kun aiemmat vaiheet on tehty-->
+<body>
+    
+    <div class="wrapper">
+        <!--Top right corner?-->
+        <div class="score_tablet">
+            <p style="font-size: 28px;">Pelaaja 1: <span class="tablet_visible" id="pel1-Score">0</span></p>
+            <p style="font-size: 28px;">Pelaaja 2: <span class="tablet_visible" id="pel2-Score">0</span></p>
+            <p id="pelari3" style="font-size: 28px; display: none;">Pelaaja 3: <span class="tablet_visible" id="pel3-Score">0</span></p>
+            <p id="pelari4" style="font-size: 28px; display: none;">Pelaaja 4: <span class="tablet_visible" id="pel4-Score">0</span></p>
+        </div>
+
+        <h2 class="pelaajan_numero" id="pelaajanNumero">Pelaaja 1</h2> <!--pelaajan numero, player 1, player 2...vaihtuu vuoron mukaan-->
+        
+        <div class="dice-area"> <!--h4, img(nappula) ja piste vaihdetaan kun pelaaja vaihtuu-->
+            <h4 class="pelaajan_nimi" id="pelaajanNimi0">Esimerkki</h4>
+            <!--<img />-->
+            <div>
+                <img src="./Kuvat/noppa1.png" alt="Nopan kuva" draggable="false" id="noppaKuvaVaihda">
+                <img src="./Kuvat/noppa1.png" alt="Nopan kuva" draggable="false" id="noppaKuvaVaihda2">
+            </div>
+            <br>
+            <button class="heita_noppaa" id="noppaHeita" onclick="nopanHeitto()" style="display: block">Heitä</button>
+            <button class="heita_noppaa2" id="pelaaUudelleen" onclick="window.location.reload()" style="display: none">Pelaa uudestaan</button> <!--piilossa, vasta kun voitat pelin, reloadaa pagen-->
+            <button class="heita_noppaa3" id="pelaaUudelleenAlku" onclick="window.location.href = 'index.html'" style="display: none">Palaa asetuksiin</button> <!--Palaa asetusten alkuun-->
+         <!--vasta ekan heiton jälkeen-->
+        </div>
+        <br>
+        <p class="pisteet_yhteensa"><span class="nakyvatPisteet" id="pisteetJS">1000</span> Pistettä</p> <!--Näyttää pistemäärän-->
+        <button class="vuoronvaihto" onclick="vaihdaVuorosi()" style="display: block" id="luovutaPainike">Lopeta vuoro</button>
+    
+    <script src="./JS2-koodi2.js"></script>    
+</body>
+</html>

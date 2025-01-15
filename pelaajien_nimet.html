@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Nopan Sikanoppapeli</title>
+    <link rel="stylesheet" href="altTyylit.css">
+</head>
+<body>
+    
+    <div class="pelaajienNimetDiv">
+        
+        <div class="pelaajienNimetSyotto" id="nimetNollaus">
+            <h4 id="kirjNimiID">Kirjoita pelaajan nimi</h4>
+            
+            <label for="1name">Pelaaja 1: </label>
+            <input type="text" id="1name" name="1name" maxlength="10"><br>
+            
+            <div id="pelaajienNimiKentat2" style="display: none">
+                <label for="twoname" class="twonameC";>Pelaaja 2: </label>
+                <input type="text" id="twoname" name="2name" maxlength="10" style="margin-top: 5px; margin-bottom: 5px;"><br>
+            </div>
+            
+            <div id="pelaajienNimiKentat3" style="display: none">
+                <label for="threename" class="threenameC">Pelaaja 3: </label>
+                <input type="text" id="threename" name="3name" maxlength="10" style="margin-bottom: 5px;"><br>
+            </div>
+    
+            <div id="pelaajienNimiKentat4" style="display: none">
+                <label for="fourname" class="fournameC">Pelaaja 4: </label>
+                <input type="text" id="fourname" name="4name" maxlength="10" style="margin-bottom: 10px;">
+            </div>
+
+            <button class="nimen_lahetys" onclick="pelaajienNimet()" type="button">Lähetä</button>
+            <!--Täältä jatkettava seuraavaksi...hanki nimet, ja muuta 4. sivun eli sikanoppa tiedoston tekstiä sen mukaan-->
+            <!--Koska sivu vaihtuu taas, on oletuksena, että nämäkin tiedot, tulee tallentaa samalla tavalla, kenties
+            nopanheitto sivu on toinen juttu koska sivu pysyy samana, mutta nimien tallennus ja max pisteet ei-->
+            
+            <p id="error-message" style="color: red; display: none;"></p> <!-- Virheilmoitus -->
+
+        </div>
+        <br>
+    </div>    
+    <script src="./JS2-koodi2.js"></script>   
+</body>
+</html>
